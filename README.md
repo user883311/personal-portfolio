@@ -11,4 +11,4 @@ User stories:
 
 This page is live at https://user883311.github.io/personal-portfolio/. 
 
-Used BootStrap. 
+Used BootStrap 4.0 and jQuery. 

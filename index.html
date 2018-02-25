@@ -6,142 +6,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<!-- <body> -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header ###container-fluid">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="pull-left" href="#">
-                    <img src="https://avatars2.githubusercontent.com/u/4528162?s=460&v=4" class="img-fluid rounded"
-                        style="max-width:50px ; padding:4px 4px 4px 0px;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">user883311</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                    <span class="sr-only">(current)</span>
                 </a>
-
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="#active">
-                            <a href="#">home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#anchor_about">about</a>
-                        </li>
-                        <li>
-                            <a href="#anchor_portfolio">portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#anchor_contact">contact</a>
-                        </li>
-
-                        </li>
-                    </ul>
-
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Portfolio
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Simon Game</a>
+                    <a class="dropdown-item" href="#">Tic Tac Toe Game</a>
+                    <a class="dropdown-item" href="#">Pomodoro Clock</a>
+                    <a class="dropdown-item" href="#">JavaScript Calculator</a>
+                    <a class="dropdown-item" href="#">TwitchTV Search API</a>
+                    <a class="dropdown-item" href="#">Wikipedia Viewer</a>
+                    <a class="dropdown-item" href="#">Local Weather App</a>
+                    <a class="dropdown-item" href="#">Quote Machine</a>
+                    <a class="dropdown-item" href="#">Tribute Page</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">More</a>
                 </div>
-            </div>
-        </div>
-    </nav>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+        <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+    </div>
+</nav>
 
-    <!-- ABOUT SECTION -->
-    <div class="container">
-        <div class="jumbotron">
-            <div id="anchor_about">
-                <h1>about</h1>
+<!-- ABOUT SECTION -->
+<div class="container">
+    <div class="jumbotron">
+        <div id="anchor_about">
+            <h1>about</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <!-- PORTFOLIO SECTION -->
+        <h1 id="anchor_portfolio">portfolio</h1>
+
+        <div class="projects row">
+            <div class="project col-lg-4 col-md-4 col-sm-6 col-sm-12">
+                <h4>Project 9: Simon Game</h4>
+                <a target="_blank" href="https://user883311.github.io/simon-game/">
+                    <img src="thumbnails/simon-game.png" class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
+                </a>
+            </div>
+
+            <div class="project col-lg-4 col-md-4 col-sm-6 col-sm-12">
+                <h4>Project 8: Tic Tac Toe</h4>
+                <a target="_blank" href="https://user883311.github.io/tic-tac-toe/">
+                    <img src="thumbnails/tic-tac-toe.png" class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
+                </a>
+            </div>
+
+            <div class="project col-lg-4 col-md-4 col-sm-6 col-sm-12">
+                <h4>Project 7: Pomodoro</h4>
+                <a target="_blank" href="https://user883311.github.io/pomodoro-clock/">
+                    <img src="thumbnails/pomodoro-clock.png" class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
+                </a>
+            </div>
+
+            <div class="project col-lg-4 col-md-4 col-sm-6 col-sm-12">
+                <h4>Project 6: Javascript Calculator</h4>
+                <a target="_blank" href="https://user883311.github.io/javascript-calculator/">
+                    <img src="thumbnails/javascript-calculator.png" class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
+                </a>
+            </div>
+
+            <div class="project col-lg-4 col-md-4 col-sm-6 col-sm-12">
+                <h4>Project 5: TwitchTV Search API</h4>
+                <a target="_blank" href="https://user883311.github.io/twitchTV-feed/">
+                    <img src="thumbnails/twitchTV-feed.png" class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
+                </a>
+            </div>
+
+            <div class="project col-lg-4 col-md-4 col-sm-6 col-sm-12">
+                <h4>Project 4: Wikipedia Viewer</h4>
+                <a target="_blank" href="https://user883311.github.io/wikipedia-search/">
+                    <img src="thumbnails/wikipedia-viewer.png" class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
+                </a>
+            </div>
+
+            <div class="project col-lg-4 col-md-4 col-sm-6 col-sm-12">
+                <h4>Project 3: Local Weather App</h4>
+                <a target="_blank" href="https://user883311.github.io/local-weather-app/">
+                    <img src="thumbnails/local-weather.png" class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
+                </a>
+            </div>
+
+            <div class="project col-lg-4 col-md-4 col-sm-6 col-sm-12">
+                <h4>Project 2: Quote Machine</h4>
+                <a target="_blank" href="https://user883311.github.io/random-quote-machine/">
+                    <img src="thumbnails/random-quote-machine.png" class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
+                </a>
+            </div>
+
+            <div class="project col-lg-4 col-md-4 col-sm-6 col-sm-12">
+                <h4>Project 1: Tribute to Asimov</h4>
+                <a target="_blank" href="https://user883311.github.io/asimov-tribute-page/">
+                    <img src="thumbnails/tribute-page.png" class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
+                </a>
+            </div>
+
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <h1 id="anchor_contact">contact</h1>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <form style="margin:10px">
+                    <div class="form-group row">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="form-group row">
+                        <input type="text" class="form-control" placeholder="Organization">
+                    </div>
+                    <div class="form-group row">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group row">
+                        <input type="text" class="form-control" placeholder="Phone">
+                    </div>
+                    <div class="form-group row">
+                        <textarea type="text" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-group row">
+                        <button type="submit" class="btn btn-default btn-block">Send</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center text-justify">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                     anim id est laborum.</p>
             </div>
-            <!-- PORTFOLIO SECTION -->
-            <h1 id="anchor_portfolio">portfolio</h1>
-
-            <div class=row>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-                    <h4>Project 1: Tribute Page</h4>
-                    <img src="https://www.thumboo.com/demo/image.html?id=dGh1bWJfaHR0cHM6Ly9jb2RlcGVuLmlvL0JhYmFKbnIvZnVsbC9CbWRnSndfMV9kZXNrdG9wXzBfZnVsbA%3D%3D&force=0"
-                        class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-                    <h4>Project 2: Portfolio Page</h4>
-                    <img src="#" class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
-                </div>
-
-                <div class="col-lg-4 col-md-4 col-sm-6 col-sm-12">
-                    <h4>Project 3: To Be Defined</h4>
-                    <img src="#" class="img-responsive img-thumbnail img-rounded center-block" alt="Project thumbnail">
-                </div>
-            </div>
-
-            <!-- CONTACT SECTION -->
-            <h1 id="anchor_contact">contact</h1>
-
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <form style="margin:10px">
-                        <div class="form-group row">
-                            <input type="text" class="form-control" placeholder="Name">
-                        </div>
-                        <div class="form-group row">
-                            <input type="text" class="form-control" placeholder="Organization">
-                        </div>
-                        <div class="form-group row">
-                            <input type="email" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="form-group row">
-                            <input type="text" class="form-control" placeholder="Phone">
-                        </div>
-                        <div class="form-group row">
-                            <textarea type="text" class="form-control" placeholder="Message"></textarea>
-                        </div>
-                        <div class="form-group row">
-                            <button type="submit" class="btn btn-default btn-block">Send</button>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center text-justify">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.</p>
-                </div>
-
-            </div>
 
         </div>
+
     </div>
-    <nav class="navbar navbar-default" id="bottom-navbar-1">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
-            <p>Designed by
-                <a href="#">user883311.</a> with coffee and
-                <i class="glyphicon glyphicon-music"></i>.</p>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
-            <p>On the web:</p>
-            <a href="#">
-                <i class="fa fa-lg fa-github"></i>
-            </a>
-            <a href="#">
-                <i class="fa fa-lg fa-stack-exchange"></i>
-            </a>
-            <a href="#">
-                <i class="fa fa-lg fa-linkedin"></i>
-            </a>
-        </div>
-
-    </nav>
+</div>
+<nav class="navbar navbar-default" id="bottom-navbar-1">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+        <p>Designed by
+            <a href="#">user883311.</a> with coffee and
+            <i class="glyphicon glyphicon-music"></i>.</p>
     </div>
-<!-- </body> -->
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+        <p>On the web:</p>
+        <a href="#">
+            <i class="fa fa-lg fa-github"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-lg fa-stack-exchange"></i>
+        </a>
+        <a href="#">
+            <i class="fa fa-lg fa-linkedin"></i>
+        </a>
+    </div>
+
+</nav>
+</div>
 
 </html>

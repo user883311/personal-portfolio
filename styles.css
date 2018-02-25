@@ -1,0 +1,6 @@
+.project {
+    margin-top: 1em;
+}
+.projects>:nth-last-child(){
+    margin-bottom: 1em;
+}
