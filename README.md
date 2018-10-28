@@ -1,7 +1,4 @@
-# personal-portfolio
-## a freecodecamp project
-
-https://www.freecodecamp.org/challenges/build-a-personal-portfolio-webpage
+# Personal Dev Portfolio
 
 User stories: 
 - I can access all of the portfolio webpage's content just by scrolling.
@@ -11,4 +8,4 @@ User stories:
 
 This page is live at https://user883311.github.io/personal-portfolio/. 
 
-Used BootStrap 4.0 and jQuery. 
+Stack: JS, jQuery, BootStrap 4.0. 
